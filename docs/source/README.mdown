@@ -1,0 +1,86 @@
+# matery 模板
+
+<p align="center"> 
+<a href="https://xinetzone.github.io" target="_blank" rel="noopener noreferrer"><img width="100" src="https://xinetzone.github.io/favicon.png" alt="Blog logo"></a>
+</p>
+
+<p align="center">
+<a href="https://www.gnu.org/licenses/"><img src="https://img.shields.io/github/license/xinetzone/matery.svg" alt="License"></a>
+<a href="http://hits.dwyl.io/xinetzone/matery"><img src="http://hits.dwyl.io/xinetzone/matery.svg" alt="HitCount"></a>
+<a href="https://github.com/xinetzone/matery/network"><img src="https://img.shields.io/github/forks/xinetzone/matery.svg" alt="GitHub forks"></a> <a href="https://github.com/xinetzone/matery/stargazers"><img src="https://img.shields.io/github/stars/xinetzone/matery.svg" alt="GitHub stars"></a>
+</p>
+
+## 未完成计划
+
+查看 hits：<http://hits.dwyl.io/>
+
+- [ ] 学习[给自己的博客加上看板娘——Live2d蕾姆 | 雷姆](https://zhuanlan.zhihu.com/p/35351118)
+
+## 如何使用
+
+1. `star` 本项目
+2. 安装 [Git](https://git-scm.com/downloads), 安装 [nodeJS](https://nodejs.org/en/)
+3. 你可以直接`fork`一份源码到你的仓库，`clone`到本地
+4. 在本地博客仓库运行`npm i`命令安装依赖包
+5. 修改配置信息，改成自己的信息
+6. 运行命令`hexo  clean`（清除生成文件），`hexo g`（生成网页）， `hexo  s`（本地预览），`hexo d`（部署）
+
+需要注意的是主题模板下载到本地使用 `git clone --recurse`：
+
+```sh
+$ git clone --recurse https://github.com/xinetzone/matery.git
+$ cd matery/docs/
+$ npm install hexo --save
+```
+
+接着，便可以在本地预览：
+
+```sh
+$ hexo clean && hexo g
+$ hexo s # 预览
+```
+
+按照注释修改 `/docs/_config.yml` 用于个人使用。
+
+若要建立一个[多语种的网站](https://hexo.io/zh-cn/docs/permalinks.html)，您可修改 `new_post_name` 和 `permalink` 参数，如下：
+
+```yml
+new_post_name: :lang/:title.md
+permalink: :lang/:title/
+```
+
+当您建立新文章时，文章会被储存到：
+
+```sh
+$ hexo new "Hello World" --lang tw
+# => source/_posts/tw/Hello-World.md
+```
+
+而网址会是：<http://localhost:4000/tw/hello-world/>
+
+更多细节请 :book: [如何修改 hexo-theme-matery 模板](https://xinetzone.github.io/tw/3567ebbb.html)。
+
+## 可能存在的问题
+
+### 1. RPC failed
+
+当您使用 `git clone` 克隆本仓库，而不是使用 `git clone --recurse` 时，如若报下面的错误：
+
+```sh
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+ffatal: the remote end hung up unexpectedly
+atal: early EOF
+fatal: index-pack failed
+```
+
+可以在终端输入如下命令解决：
+
+```sh
+$ git config --global http.postBuffer 524288000
+```
+
+如果使用过程中有什么问题可以在文章最后评论区**留言和讨论**，如果觉得文章有用，请:smile:打赏按键：
+
+<p align="center">
+<img width="100" src="https://xinetzone.github.io/medias/reward/alipay.jpg" >
+<img width="100" src="https://xinetzone.github.io/medias/reward/wechat.png" >

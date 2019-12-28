@@ -1,0 +1,65 @@
+[
+	{
+		"name": "Fate",
+		"artist": "Alan Walker",
+		"url": "/medias/music/Fate.mp3",
+		"cover": "/medias/music/avatars/yequ.jpg"
+	},{
+		"name": "七月上",
+		"artist": "Jam",
+		"url": "/medias/music/七月上.mp3",
+		"cover": "/medias/music/avatars/yiluxiangbei.jpg"
+	},{
+		"name": "去年夏天",
+		"artist": "王大毛",
+		"url": "/medias/music/去年夏天.mp3",
+		"cover": "/medias/music/avatars/tiantangdemogui.jpg"
+	},{
+		"name": "移植（Cover：艾辰）",
+		"artist": "熙宝",
+		"url": "/medias/music/移植.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "红昭愿",
+		"artist": "音阙诗听",
+		"url": "/medias/music/红昭愿.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "讲真的",
+		"artist": "曾惜",
+		"url": "/medias/music/讲真的.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "房东的猫 - 云烟成雨",
+		"artist": "房东的猫",
+		"url": "/medias/music/云烟成雨.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "一百万个可能",
+		"artist": "Christine Welch",
+		"url": "/medias/music/一百万个可能.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "出山",
+		"artist": "花粥",
+		"url": "/medias/music/出山.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "BINGBIAN 病变 (女声版)",
+		"artist": "鞠文娴",
+		"url": "/medias/music/BINGBIAN.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	},
+	{
+		"name": "9420",
+		"artist": "麦小兜",
+		"url": "/medias/music/9420.mp3",
+		"cover": "/medias/music/avatars/daoshu.jpg"
+	}
+]

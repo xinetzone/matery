@@ -1,0 +1,181 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 上善若水
+subtitle: "知者乐水，仁者乐山"
+description: 温州大学 | 应用数学 | 深度学习
+keywords: "MXNet Pytorch TensorFlow 刘新伟 计算机视觉 深度学习"
+author: 刘新伟
+language: zh-CN
+timezone: "Asia/Shanghai"
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://xinetzone.github.io
+root: /
+## npm install hexo-abbrlink --save
+permalink: :lang/:abbrlink.html # :year/:month/:day/:title/
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :lang/:title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+# post_asset_folder 为 true参数后，在建立文件时，Hexo
+## 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹，
+## 如此一来，您便可以更方便的使用资源。
+## npm install hexo-asset-image --save
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: true  # 自动检测高亮代码样式
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 18
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+use_date_for_updated: false
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 18
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: matery
+
+# Deployment
+## npm install hexo-deployer-git --save
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/xinetzone/xinetzone.github.io.git
+  branch: master
+
+  # 内容搜索
+## yarn add hexo-generator-search
+search:
+  path: search.xml
+  field: post
+
+# 添加动漫人物 
+## yarn add hexo-helper-live2d
+live2d:  # https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md
+  enable: true # 默认 false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  # log: false
+  model: # https://github.com/xiazeyu/live2d-widget-models
+    ## yarn add live2d-widget-model-shizuku
+    use: live2d-widget-model-shizuku # npm-module package name，
+    # use: wanko # 博客根目录/live2d_models/ 下的目录名
+    # use: ./wives/wanko # 相对于博客根目录的路径
+    # use: https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json # 你的自定义 url
+  display:
+    position: left
+    width: 200
+    height: 300
+  mobile: # 是否在移动设备上显示
+    show: true # 默认 false
+    scale: 0.5 # 移动设备上的缩放  
+  react:
+    opacity: 0.7
+
+# 添加 RSS 订阅支持
+## yarn add hexo-generator-feed
+feed:
+  type: rss2 # 默认为 atom
+  path: rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+# 添加emoji表情支持
+## npm install hexo-filter-github-emojis --save
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
+# 代码高亮
+## (npm i -S)yarn add hexo-prism-plugin
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: true    # default false
+  custom_css:
+
+# 天气接口插件
+weather:
+  enable: true
