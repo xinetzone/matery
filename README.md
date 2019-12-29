@@ -3,3 +3,54 @@
 刘新伟的博客
 
 [![GitHub issues](https://img.shields.io/github/issues/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/xinetzone.github.io.svg)](http://hits.dwyl.io/xinetzone/xinetzone.github.io) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cv) ![repo size](https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/watchers)
+
+本项目基于 [blinkfox/hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery) 修改了一个 matery 主题网站的搭建的模板。
+
+## 如何使用
+
+1. `star` 本项目之后，可以直接`fork`一份源码到您的仓库，然后  `clone` 到本地磁盘
+2. 安装 [Git](https://git-scm.com/downloads)，[nodeJS](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/en/docs/install#windows-stable)
+3. 在本地博客仓库进入到 `docs/` 目录，运行 `yarn install` 命令安装依赖包
+4. 仍然在 `docs/` 目录下，运行 `hexo s` 便可在本地预览网站。
+5. 修改配置 `docs/_config.yml` 和 `docs/themes/matery/_config.yml` 信息，改成您自己的信息
+6. 运行命令`hexo  clean`（清除生成文件），`hexo g`（生成网页）， `hexo  s`（本地预览），`hexo d`（部署），详细教程可参考 Hexo 官方网站：[写作](https://hexo.io/zh-cn/docs/writing)
+
+因为本网站是支持多语种的（详细内容见 [多语种的网站](https://hexo.io/zh-cn/docs/permalinks.html)），所以当您建立新文章时，最好使用如下格式：
+
+```sh
+$ hexo new "Hello World" --lang zh-CN
+# => source/_posts/zh-CN/Hello-World.md
+```
+
+其中 `zh-CN` 表示简体中文。
+
+## 可能存在的问题
+
+### 1. RPC failed
+
+当您使用 `git clone` 克隆本仓库，而不是使用 `git clone --recurse` 时，如若报下面的错误：
+
+```sh
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+ffatal: the remote end hung up unexpectedly
+atal: early EOF
+fatal: index-pack failed
+```
+
+可以在终端输入如下命令解决：
+
+```sh
+$ git config --global http.postBuffer 524288000
+```
+
+如果使用过程中有什么问题可以在文章最后评论区**留言和讨论**，如果觉得文章有用，请:smile:打赏按键：
+
+<p align="center">
+<img width="100" src="https://xinetzone.github.io/medias/reward/alipay.jpg" >
+<img width="100" src="https://xinetzone.github.io/medias/reward/wechat.png" >
+
+## 未完成计划
+
+查看 hits：<http://hits.dwyl.io/>
+
+- [ ] 学习[给自己的博客加上看板娘——Live2d蕾姆 | 雷姆](https://zhuanlan.zhihu.com/p/35351118)
