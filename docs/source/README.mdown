@@ -1,64 +1,29 @@
-# matery 模板
+# xinetzone.github.io
 
-<p align="center"> 
-<a href="https://xinetzone.github.io" target="_blank" rel="noopener noreferrer"><img width="100" src="https://xinetzone.github.io/favicon.png" alt="Blog logo"></a>
-</p>
+刘新伟的博客
 
-<p align="center">
-<a href="https://www.gnu.org/licenses/"><img src="https://img.shields.io/github/license/xinetzone/matery.svg" alt="License"></a>
-<a href="http://hits.dwyl.io/xinetzone/matery"><img src="http://hits.dwyl.io/xinetzone/matery.svg" alt="HitCount"></a>
-<a href="https://github.com/xinetzone/matery/network"><img src="https://img.shields.io/github/forks/xinetzone/matery.svg" alt="GitHub forks"></a> <a href="https://github.com/xinetzone/matery/stargazers"><img src="https://img.shields.io/github/stars/xinetzone/matery.svg" alt="GitHub stars"></a>
-</p>
+[![GitHub issues](https://img.shields.io/github/issues/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/xinetzone.github.io.svg)](http://hits.dwyl.io/xinetzone/xinetzone.github.io) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cv) ![repo size](https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/watchers)
 
-## 未完成计划
-
-查看 hits：<http://hits.dwyl.io/>
-
-- [ ] 学习[给自己的博客加上看板娘——Live2d蕾姆 | 雷姆](https://zhuanlan.zhihu.com/p/35351118)
+本项目基于 [blinkfox/hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery) 修改了一个 matery 主题网站的搭建的模板。
 
 ## 如何使用
 
-1. `star` 本项目
-2. 安装 [Git](https://git-scm.com/downloads), 安装 [nodeJS](https://nodejs.org/en/)
-3. 你可以直接`fork`一份源码到你的仓库，`clone`到本地
-4. 在本地博客仓库运行`npm i`命令安装依赖包
-5. 修改配置信息，改成自己的信息
-6. 运行命令`hexo  clean`（清除生成文件），`hexo g`（生成网页）， `hexo  s`（本地预览），`hexo d`（部署）
+1. `star` 本项目之后，可以直接`fork`一份源码到您的仓库，然后  `clone` 到本地磁盘
+2. 安装 [Git](https://git-scm.com/downloads)，[nodeJS](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/en/docs/install#windows-stable)
+3. 在本地博客仓库进入到 `docs/` 目录，运行 `yarn install` 命令安装依赖包
+4. 仍然在 `docs/` 目录下，运行 `hexo s` 便可在本地预览网站。
+5. 修改配置 `docs/_config.yml` 和 `docs/themes/matery/_config.yml` 信息，改成您自己的信息
+6. 替换 `docs/themes/matery/source/medias/reward` 之下的二维码为您自己的
+7. 运行命令`hexo  clean`（清除生成文件），`hexo g`（生成网页）， `hexo  s`（本地预览），`hexo d`（部署），详细教程可参考 Hexo 官方网站：[写作](https://hexo.io/zh-cn/docs/writing)
 
-需要注意的是主题模板下载到本地使用 `git clone --recurse`：
-
-```sh
-$ git clone --recurse https://github.com/xinetzone/matery.git
-$ cd matery/docs/
-$ npm install hexo --save
-```
-
-接着，便可以在本地预览：
+因为本网站是支持多语种的（详细内容见 [多语种的网站](https://hexo.io/zh-cn/docs/permalinks.html)），所以当您建立新文章时，最好使用如下格式：
 
 ```sh
-$ hexo clean && hexo g
-$ hexo s # 预览
+$ hexo new "Hello World" --lang zh-CN
+# => source/_posts/zh-CN/Hello-World.md
 ```
 
-按照注释修改 `/docs/_config.yml` 用于个人使用。
-
-若要建立一个[多语种的网站](https://hexo.io/zh-cn/docs/permalinks.html)，您可修改 `new_post_name` 和 `permalink` 参数，如下：
-
-```yml
-new_post_name: :lang/:title.md
-permalink: :lang/:title/
-```
-
-当您建立新文章时，文章会被储存到：
-
-```sh
-$ hexo new "Hello World" --lang tw
-# => source/_posts/tw/Hello-World.md
-```
-
-而网址会是：<http://localhost:4000/tw/hello-world/>
-
-更多细节请 :book: [如何修改 hexo-theme-matery 模板](https://xinetzone.github.io/tw/3567ebbb.html)。
+其中 `zh-CN` 表示简体中文。
 
 ## 可能存在的问题
 
@@ -84,3 +49,9 @@ $ git config --global http.postBuffer 524288000
 <p align="center">
 <img width="100" src="https://xinetzone.github.io/medias/reward/alipay.jpg" >
 <img width="100" src="https://xinetzone.github.io/medias/reward/wechat.png" >
+
+## 未完成计划
+
+查看 hits：<http://hits.dwyl.io/>
+
+- [ ] 学习[给自己的博客加上看板娘——Live2d蕾姆 | 雷姆](https://zhuanlan.zhihu.com/p/35351118)
