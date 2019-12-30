@@ -8,7 +8,7 @@
 
 ## 如何使用
 
-1. `star` 本项目之后，可以直接`fork`一份源码到您的仓库，然后  `clone` 到本地磁盘
+1. `star` 本项目之后，可以直接`fork`一份源码到您的仓库（需要将 `xinetzone` 改成您自己的账户名称），然后  `clone` 到本地磁盘
 2. 安装 [Git](https://git-scm.com/downloads)，[nodeJS](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/en/docs/install#windows-stable)
 3. 在本地博客仓库进入到 `docs/` 目录，运行 `yarn install` 命令安装依赖包
 4. 仍然在 `docs/` 目录下，运行 `hexo s` 便可在本地预览网站。
@@ -24,6 +24,8 @@ $ hexo new "Hello World" --lang zh-CN
 ```
 
 其中 `zh-CN` 表示简体中文。
+
+最终的网站的成品：<https://xinetzone.github.io/>，其中 `xinetzone` 改成您自己的账户名称即可。
 
 ## 自定义主题
 
@@ -119,3 +121,4 @@ $ git config --global http.postBuffer 524288000
 查看 hits：<http://hits.dwyl.io/>
 
 - [ ] 学习[给自己的博客加上看板娘——Live2d蕾姆 | 雷姆](https://zhuanlan.zhihu.com/p/35351118)
+- [ ] [hexo博客添加一级分类相册功能](https://liyangzone.com/2019/07/22/hexo博客添加一级分类相册/)
