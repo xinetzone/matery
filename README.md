@@ -74,6 +74,21 @@ $ hexo new "Hello World" --lang zh-CN
 
 最后，将链接的 `?param=130y130` 部分删除，便可直接保存封面图片了。
 
+### 3  添加 gitalk 支持
+
+修改 `docs/themes/matery/_config.yml` 中的 gitalk 配置为：
+
+```json
+gitalk:
+  enable: true
+  owner: xinetzone # 您的账户名称
+  repo: xinetzone.github.io # 网站域名，即“账户名称.github.io”
+  oauth:
+    clientId: # 填入
+    clientSecret: # 填入
+  admin: xinetzone # 您的账户名称
+```
+
 ## 可能存在的问题
 
 ### 1. RPC failed
