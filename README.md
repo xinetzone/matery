@@ -10,11 +10,12 @@
 
 1. `star` 本项目之后，可以直接`fork`一份源码到您的仓库（需要将 `xinetzone` 改成您自己的账户名称），然后  `clone` 到本地磁盘
 2. 安装 [Git](https://git-scm.com/downloads)，[nodeJS](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/en/docs/install#windows-stable)
-3. 在本地博客仓库进入到 `docs/` 目录，运行 `yarn install` 命令安装依赖包
-4. 仍然在 `docs/` 目录下，运行 `hexo s` 便可在本地预览网站。
-5. 修改配置 `docs/_config.yml` 和 `docs/themes/matery/_config.yml` 信息，改成您自己的信息
-6. 替换 `docs/themes/matery/source/medias/reward` 之下的二维码为您自己的
-7. 运行命令`hexo  clean`（清除生成文件），`hexo g`（生成网页）， `hexo  s`（本地预览），`hexo d`（部署），详细教程可参考 Hexo 官方网站：[写作](https://hexo.io/zh-cn/docs/writing)
+3. 使用命令 `yarn global add hexo-cli` 安装 Hexo
+4. 在本地博客仓库进入到 `docs/` 目录，运行 `yarn install` 命令安装依赖包
+5. 仍然在 `docs/` 目录下，运行 `hexo s` 便可在本地预览网站。
+6. 修改配置 `docs/_config.yml` 和 `docs/themes/matery/_config.yml` 信息，改成您自己的信息
+7. 替换 `docs/themes/matery/source/medias/reward` 之下的二维码为您自己的
+8. 运行命令`hexo  clean`（清除生成文件），`hexo g`（生成网页）， `hexo  s`（本地预览），`hexo d`（部署），详细教程可参考 Hexo 官方网站：[写作](https://hexo.io/zh-cn/docs/writing)
 
 因为本网站是支持多语种的（详细内容见 [多语种的网站](https://hexo.io/zh-cn/docs/permalinks.html)），所以当您建立新文章时，最好使用如下格式：
 
