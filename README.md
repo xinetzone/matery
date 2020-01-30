@@ -113,8 +113,8 @@ $ git config --global http.postBuffer 524288000
 如果使用过程中有什么问题可以在文章最后评论区**留言和讨论**，如果觉得文章有用，请:smile:打赏按键：
 
 <p align="center">
-<img width="100" src="https://xinetzone.github.io/medias/reward/alipay.jpg" >
-<img width="100" src="https://xinetzone.github.io/medias/reward/wechat.png" >
+<img width="100" src="https://xinetzone.github.io/medias/reward/alipay.jpg">
+<img width="100" src="https://xinetzone.github.io/medias/reward/wechat.png">
 
 ## 未完成计划
 
