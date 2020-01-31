@@ -2,14 +2,14 @@
 
 刘新伟的博客
 
-[![GitHub issues](https://img.shields.io/github/issues/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/xinetzone.github.io.svg)](http://hits.dwyl.io/xinetzone/xinetzone.github.io) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cv) ![repo size](https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/watchers)
+[![GitHub issues](https://img.shields.io/github/issues/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/xinetzone.github.io)](https://github.com/xinetzone/xinetzone.github.io/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/xinetzone.github.io.svg)](http://hits.dwyl.io/xinetzone/xinetzone.github.io) ![repo size](https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/xinetzone.github.io.svg)](https://github.com/xinetzone/xinetzone.github.io/watchers) [![GitHub version](https://badge.fury.io/gh/xinetzone%2Fxinetzone.github.io.svg)](https://badge.fury.io/gh/xinetzone%2Fxinetzone.github.io)
 
-本项目基于 [blinkfox/hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery) 修改了一个 matery 主题网站的搭建的模板。
+本项目基于 [blinkfox/hexo-theme-matery](https://github.com/blinkfox/hexo-theme-matery) 修改了一个 matery 主题网站的搭建的模板。由于 MathJax 加载速度慢，不能很好的支持公式对齐，所以将其替换为 Katex。
 
 ## 如何使用
 
 1. `star` 本项目之后，可以直接`fork`一份源码到您的仓库（需要将 `xinetzone` 改成您自己的账户名称），然后  `clone` 到本地磁盘
-2. 安装 [Git](https://git-scm.com/downloads)，[nodeJS](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/en/docs/install#windows-stable)
+2. 安装 [Git](https://git-scm.com/downloads)，[nodeJS](https://nodejs.org/en/)，[yarn](https://yarnpkg.com/en/docs/install#windows-stable)，为了支持 Katex 需要安装 [Pandoc](https://pandoc.org/installing.html)
 3. 使用命令 `yarn global add hexo-cli` 安装 Hexo
 4. 在本地博客仓库进入到 `docs/` 目录，运行 `yarn install` 命令安装依赖包
 5. 仍然在 `docs/` 目录下，运行 `hexo s` 便可在本地预览网站。

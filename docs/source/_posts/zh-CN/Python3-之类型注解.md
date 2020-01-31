@@ -3,7 +3,6 @@ title: Python3 之类型注解
 top: true
 cover: true
 toc: true
-mathjax: true
 comments: true
 lang: zh-CN
 summary: 本文主要介绍如何注解 Python，方便代码的审查。

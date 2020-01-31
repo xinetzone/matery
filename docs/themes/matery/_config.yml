@@ -177,15 +177,6 @@ copyright:
   minCharNumber: 120 # 至少复制多少个字符就追加版权信息.
   description: 本文章著作权归作者所有，任何形式的转载都请注明出处。
 
-# Whether to activate the mathjax, this is a global configuration, but the post still does not open the mathjax rendering.
-# Considering that the mathjax loading is time consuming,
-# you also need to add `mathjax: true` to the Front-matter of the post that needs to be rendered.
-# 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
-# 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
-mathjax:
-  enable: true
-  cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
 # Post word count, reading duration, site total word count.
 # Before you activate, please confirm that you have installed the hexo-wordcount plugin,
 # install the plugin command: `npm i --save hexo-wordcount`.
@@ -194,7 +185,7 @@ mathjax:
 ## yarn add hexo-wordcount
 postInfo:
   date: true # 发布日期
-  update: ture # 更新日期
+  update: true # 更新日期
   wordCount: true # 文章字数统计
   totalCount: true # 站点总文章字数
   min2read: true # 文章阅读时长
@@ -286,12 +277,12 @@ postCalendar: true
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
   enable: false
-  owner:
-  repo:
+  owner: xinetzone
+  repo: xinetzone.github.io
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: 
+    clientSecret: 
+  admin: xinetzone
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -471,7 +462,7 @@ tidio:
 
 #背景canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -480,7 +471,7 @@ canvas_nest:
 
 # 背景静止彩带.
 ribbon:
-  enable: false
+  enable: true
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
@@ -488,7 +479,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.

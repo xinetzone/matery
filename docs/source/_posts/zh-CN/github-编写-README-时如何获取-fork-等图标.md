@@ -3,7 +3,6 @@ title: github 编写 README 时如何获取 fork 等图标
 top: false # 推荐文章（文章是否置顶）
 cover: true # 表示该文章是否需要加入到首页轮播封面中
 toc: true
-mathjax: false
 lang: zh-CN
 tags: [README, 开源项目]
 categories: 项目

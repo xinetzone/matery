@@ -1,6 +1,5 @@
 ---
 title: contact
-mathjax: false
 type: contact
 layout: contact
 date: 2019-09-11 07:25:21

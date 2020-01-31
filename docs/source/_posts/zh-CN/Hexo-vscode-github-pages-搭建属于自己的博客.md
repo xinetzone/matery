@@ -3,7 +3,6 @@ title: Hexo+vscode+github pages 搭建属于自己的博客
 top: false
 cover: false
 toc: true
-mathjax: false
 lang: zh-CN
 tags: [github pages, hexo]
 categories: 教程

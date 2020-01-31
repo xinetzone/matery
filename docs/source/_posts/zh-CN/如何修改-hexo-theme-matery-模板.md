@@ -3,7 +3,6 @@ title: 如何修改 hexo-theme-matery 模板
 top: false
 cover: false
 toc: true
-mathjax: false
 lang: zh-CN
 tags: [github pages, hexo]
 categories: 教程

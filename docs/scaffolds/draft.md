@@ -4,7 +4,6 @@ top: false # 推荐文章（文章是否置顶）
 cover: false # 表示该文章是否需要加入到首页轮播封面中
 password:
 toc: true
-mathjax: false
 comments: true
 summary: # 文章摘要
 tags: # 文章标签，一篇文章可以多个标签

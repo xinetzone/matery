@@ -1,6 +1,5 @@
 ---
 title: 图书馆
-mathjax: false
 type: books
 layout: books
 date: 2019-10-16 21:59:09

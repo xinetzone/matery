@@ -179,3 +179,9 @@ prism_plugin:
 # 天气接口插件
 weather:
   enable: true
+
+# 添加 katex 支持，参考 https://blog.masellum.me/2018/10/Hexo-Math-Katex/
+# yarn add hexo-renderer-pandoc
+# yarn add hexo-katex
+pandoc:
+  mathEngine: katex

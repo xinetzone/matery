@@ -1,6 +1,5 @@
 ---
 title: 混沌
-mathjax: false
 type: lab
 layout: lab
 date: 2019-09-11 22:55:16

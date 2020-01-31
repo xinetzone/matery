@@ -1,6 +1,5 @@
 ---
 title: schedule
-mathjax: false
 type: schedule
 layout: schedule
 date: 2019-10-14 10:04:45
