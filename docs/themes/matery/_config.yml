@@ -276,13 +276,13 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
-  owner: xinetzone
-  repo: xinetzone.github.io
+  enable: false #true
+  owner: #xinetzone
+  repo: #xinetzone.github.io
   oauth:
     clientId: 
     clientSecret: 
-  admin: xinetzone
+  admin: #xinetzone
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活

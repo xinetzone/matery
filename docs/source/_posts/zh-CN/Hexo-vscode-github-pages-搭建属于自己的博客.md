@@ -234,7 +234,7 @@ post_asset_folder: true # true 支持图片本地上传
 
 通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。随着 Hexo 3 的发布，许多新的标签插件被加入到了核心代码中。这使得你可以更简单地在文章中引用你的资源。
 
-```md
+```markdown
 {% asset_path slug %}
 {% asset_img slug [title] %}
 {% asset_link slug [title] %}
@@ -253,3 +253,5 @@ post_asset_folder: true # true 支持图片本地上传
 ```sh
 $ npm install hexo-deployer-git --save
 ```
+
+如果您觉得麻烦，可以直接 fork 我已经配置好的博客模板 [xinetzone-matery](https://github.com/xinetzone/xinetzone.github.io) 并按照 README 进行操作即可。

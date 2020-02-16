@@ -4,10 +4,10 @@ type: lab
 layout: lab
 date: 2019-09-11 22:55:16
 ---
-
+<!-- slide -->
 ## 欢迎进入水之界
 
-刘新伟的博客与 AI
+刘新伟的博客与AI
 
 - 一些数据集处理相关的 [datasetsome](https://dataloaderx.github.io/datasetsome/)
 - 一个项目的通用模板（python） [projects](https://xinetzone.github.io/projects/)
@@ -15,7 +15,7 @@ date: 2019-09-11 22:55:16
 - [一个程序员的自我成长笔记](https://www.jianshu.com/nb/40234109)
 - [动手实践计算机视觉](https://xinetzone.github.io/cv-actions/)
 - [知识大乱斗](https://xinetzone.github.io/anysome/)
-
+<!-- slide -->
 ## 他山之石
 
 - 神书：[The Architecture of Open Source Applications](http://aosabook.org/en/index.html)，里面有 500 line or less。
@@ -25,7 +25,7 @@ date: 2019-09-11 22:55:16
 - [Octave/Matlab Tutorial](https://www.cnblogs.com/leezx/p/5635056.html)：Matlab 手册。
 - [Jinkey](https://jinkey.ai/)：独立开发者、人工智能产品经理。
 - [博士数学家园](http://www.math.org.cn/)：享受稳定快速的数学资源服务，交流数学问题，寻找数学朋友。
-
+<!-- slide -->
 ## 实用工具
 
 - [pdf24](https://tools.pdf24.org/zh/merge-pdf) 支持多种 pdf 文件操作。
@@ -38,7 +38,7 @@ date: 2019-09-11 22:55:16
 - Snipaste [地址](https://zh.snipaste.com/)-[手册](https://docs.snipaste.com/zh-cn/)：一个好用的截图工具。
 - [Altair: Declarative Visualization in Python](https://altair-viz.github.io/index.html#altair-declarative-visualization-in-python "Permalink to this headline")
 - [Vega](https://vega.github.io/vega/)
-
+<!-- slide -->
 ## 信息交流
 
 - [他说](/lab/他说.html)

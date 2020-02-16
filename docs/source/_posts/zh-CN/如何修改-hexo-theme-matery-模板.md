@@ -538,3 +538,5 @@ $ hexo new page board
     url: /book
     icon: fa-book
 ```
+
+如果您觉得麻烦，可以直接 fork 我已经配置好的博客模板 [xinetzone-matery](https://github.com/xinetzone/xinetzone.github.io) 并按照 README 进行操作即可。
