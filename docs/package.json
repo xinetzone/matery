@@ -34,6 +34,6 @@
     "hexo-wordcount": "^6.0.1",
     "live2d-widget-model-shizuku": "^1.0.5",
     "acorn": "^7.1.1",
-    "minimist": "1.2.2"
+    "minimist": "1.2.3"
   }
 }
