@@ -33,6 +33,7 @@
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
     "katex": "^0.11.1",
-    "live2d-widget-model-shizuku": "^1.0.5"
+    "live2d-widget-model-shizuku": "^1.0.5",
+    "minimist": "^1.2.5"
   }
 }
