@@ -161,6 +161,7 @@ feed:
 
 # 添加emoji表情支持
 ## npm install hexo-filter-github-emojis --save
+## https://github.com/crimx/hexo-filter-github-emojis
 githubEmojis:
   enable: true
   className: github-emoji
@@ -180,8 +181,23 @@ prism_plugin:
 weather:
   enable: true
 
-# 添加 katex 支持，参考 https://blog.masellum.me/2018/10/Hexo-Math-Katex/
-# yarn add hexo-renderer-pandoc
-# yarn add hexo-katex
+# 方法1：添加 katex 支持，
+## 参考 https://blog.masellum.me/2018/10/Hexo-Math-Katex/
+# yarn remove hexo-renderer-marked
+#yarn add hexo-renderer-pandoc
 pandoc:
   mathEngine: katex
+# 方法2：https://bugwz.com/2019/09/17/hexo-markdown-renderer/
+# yarn remove hexo-renderer-marked
+# yarn add hexo-renderer-markdown-it-plus
+# yarn add katex
+# markdown_it_plus:
+#   highlight: true
+#   html: true
+#   xhtmlOut: true
+#   breaks: true
+#   langPrefix:
+#   linkify: true
+#   typographer:
+#   quotes: “”‘’
+#   pre_class: highlight

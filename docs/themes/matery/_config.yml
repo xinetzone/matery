@@ -14,9 +14,6 @@ menu:
       - name: Categories
         url: /categories
         icon: fas fa-bookmark
-  About:
-    url: /about
-    icon: fas fa-user-circle
   视界:
     url: /lab
     icon: fas fa-eye
@@ -40,6 +37,9 @@ menu:
     #  - name: Galleries
     #    url: /galleries
     #    icon: fas fa-image
+  About:
+    url: /about
+    icon: fas fa-user-circle
   Contact:
     url: /contact
     icon: fas fa-comments

@@ -12,8 +12,10 @@
     "version": "4.2.0"
   },
   "dependencies": {
-    "core-js": "^3.6.1",
-    "hexo": "^4.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "core-js": "^3.6.5",
+    "hexo": "^4.2.0",
     "hexo-abbrlink": "^2.0.5",
     "hexo-asset-image": "^1.0.0",
     "hexo-deployer-git": "^2.1.0",
@@ -22,18 +24,15 @@
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-index": "^1.0.0",
-    "hexo-generator-search": "^2.4.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-helper-live2d": "^3.1.1",
     "hexo-katex": "^0.0.13",
     "hexo-prism-plugin": "^2.3.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-pandoc": "^0.3.0",
-    "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
-    "live2d-widget-model-shizuku": "^1.0.5",
-    "acorn": "^7.1.1",
-    "minimist": "1.2.2"
+    "katex": "^0.11.1",
+    "live2d-widget-model-shizuku": "^1.0.5"
   }
 }
