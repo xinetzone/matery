@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="<%= config.html_lang %>">
+<%- partial('_partial/head') %>
+
+<% if (theme.background.enable) { %>
+   <%- partial('_partial/background') %>
+<% } %>
+
+<body>
+    <%- partial('_partial/header') %>
+    <%- body %>
+    <%- partial('_partial/footer') %>
+    <%- partial('_partial/search') %>
+    <%- partial('_partial/back-top') %>
+    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.materialize) %>"></script>
+    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.masonry) %>"></script>
+    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.scrollProgress) %>"></script>
+    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.lightgallery) %>"></script>
+    <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.matery) %>"></script>
+    
+    <%- partial('_partial/baidu-analytics') %>
+    <%- partial('_partial/baidu-push') %>
+    <%- partial('_partial/theme') %>
+</body>
+
+</html>

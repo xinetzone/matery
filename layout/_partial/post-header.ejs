@@ -1,0 +1,69 @@
+<div class="card-content article-info">
+    <div class="row tag-cate">
+        <div class="col s7">
+            <% if (page.tags && page.tags.length) { %>
+            <div class="article-tag">
+                <% page.tags.forEach(function(tag) { %>
+                    <a href="<%- url_for(tag.path) %>">
+                        <span class="chip bg-color"><%= tag.name %></span>
+                    </a>
+                <% }); %>
+            </div>
+            <% } else { %>
+                  <div class="article-tag">
+                    <span class="chip bg-color"><%- __("notag")  %></span>
+                  </div>
+            <% } %>
+        </div>
+        <div class="col s5 right-align">
+            <% if (page.categories && page.categories.length > 0) { %>
+            <div class="post-cate">
+                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                <% page.categories.forEach(category => { %>
+                    <a href="<%- url_for(category.path) %>" class="post-category">
+                        <%- category.name %>
+                    </a>
+                <% }); %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+
+    <div class="post-info">
+        <% if (theme.postInfo.date) { %>
+        <div class="post-date info-break-policy">
+            <i class="far fa-calendar-minus fa-fw"></i><%- __('publishDate') %>:&nbsp;&nbsp;
+            <%- date(page.date, 'YYYY-MM-DD') %>
+        </div>
+        <% } %>
+
+        <% if (theme.postInfo.update) { %>
+        <div class="post-date info-break-policy">
+            <i class="far fa-calendar-check fa-fw"></i><%- __('updateDate') %>:&nbsp;&nbsp;
+            <%- date(page.updated, 'YYYY-MM-DD') %>
+        </div>
+        <% } %>
+
+        <% if (theme.postInfo.wordCount) { %>
+        <div class="info-break-policy">
+            <i class="far fa-file-word fa-fw"></i><%- __('wordCount') %>:&nbsp;&nbsp;
+            <%= wordcount(page.content) %>
+        </div>
+        <% } %>
+
+        <% if (theme.postInfo.min2read) { %>
+        <div class="info-break-policy">
+            <i class="far fa-clock fa-fw"></i><%- __('readTimes') %>:&nbsp;&nbsp;
+            <%= min2read(page.content) %> <%= __('Minutes') %>
+        </div>
+        <% } %>
+
+        <% if (theme.postInfo.readCount && theme.busuanziStatistics && theme.busuanziStatistics.enable) { %>
+            <div id="busuanzi_container_page_pv" class="info-break-policy">
+                <i class="far fa-eye fa-fw"></i><%- __('readCount') %>:&nbsp;&nbsp;
+                <span id="busuanzi_value_page_pv"></span>
+            </div>
+        <% } %>
+    </div>
+</div>
+<hr class="clearfix">

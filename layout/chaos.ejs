@@ -1,0 +1,28 @@
+<%- partial('_partial/bg-cover') %>
+
+<style>
+    a {
+        color: rebeccapurple
+    }
+</style>
+
+<main class="content">
+    <div id="contact" class="container chip-container">
+        <div class="card w3-pale-yellow">
+            <div class="card-content">
+                <div class="tag-title center-align">
+                    <i class="fas fa-list"></i>&nbsp;&nbsp;<%= __('chaos') %>
+                </div>
+                <% if (config.prismjs && config.prismjs.enable) { %>
+                    <!-- 是否加载使用自带的 prismjs. -->
+                    <link rel="stylesheet" href="<%- theme.jsDelivr.url %><%- url_for(theme.libs.css.prism) %>">
+                <% } %>
+                <%- page.content %>
+            </div>
+        </div>
+    </div>
+</main>
+
+<% if (theme.katex.enable) { %>
+    <%- partial('_widget/katex') %>
+<% } %>

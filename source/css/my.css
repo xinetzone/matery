@@ -1,0 +1,6 @@
+dfn.xin-term {
+    color: yellow;
+    padding: 0 2px 0 2px;
+    shape-rendering: optimizeSpeed;
+    text-shadow: 1px 1px 2px rebeccapurple, 0 0 1em red, 0 0 0.2em blue;
+}

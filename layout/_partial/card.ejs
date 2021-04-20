@@ -1,0 +1,18 @@
+<div class="card-content article-card-content">
+    <div id="articleContent">
+        <%- page.content %>
+        <% if (theme.bbtime.enable && page.layout == 'bb') { %>
+            <%- partial('_partial/bb') %>
+        <% } %>
+    </div>
+    <hr/>
+
+    <%- partial('_partial/reprint-statement') %>
+
+    <div class="tag_share" style="display: block;">
+        <%- partial('_partial/share') %>
+    </div>
+    <% if (theme.reward && theme.reward.enable) { %>
+        <%- partial('_partial/reward') %>
+    <% } %>
+</div>
